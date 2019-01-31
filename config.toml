@@ -1,12 +1,12 @@
 baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
-defaultcontentlangage = "en"
-theme = "coder"
+defaultcontentlangage = "ja"
+theme = "my-theme"
 title = "caffeine"
 
 [params]
 	author = "caffeine"
-	info = "Beginner of Web programming."
+	info = "高専生"
 	description = "caffeine's portfolio page"
 	
 	avatarurl = "images/avatar.png"
