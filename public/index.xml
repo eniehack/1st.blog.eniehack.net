@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caffeine</title><link>https://eniehack.netlify.com/</link><description>Recent content on caffeine</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sat, 15 Sep 2018 23:12:29 +0900</lastBuildDate><atom:link href="https://eniehack.netlify.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Works</title><link>https://eniehack.netlify.com/works/</link><pubDate>Sat, 15 Sep 2018 23:12:29 +0900</pubDate><guid>https://eniehack.netlify.com/works/</guid><description> Matsuya Web APIクライアント Matsuya-Sinatra RubyのWebフレームワーク、Sinatraを使ったMatsuya Web APIクライアントです。(開発中)
+ラノベの詳細情報が検索できる LightNovel-Database PythonのWebフレームワーク、Flaskを使ったライトノベルデータベースです。(開発中)
+Subway非公式 Subwayメニューを返すAPI Subway-Web-API PythonのWebフレームワーク、Falconを使ったSubwayのメニューを返すAPIです。Bottle実装版もあります。
+プロット公開サイト Plothub 作品やプロダクトの企画を投稿できるサービスです。(開発中)
+coming soon … 作者に還元される古本屋 クロスプラットフォームなチャットアプリケーション プロトコルはMatrixか、XMPPを使用予定 オンライン時間銀行 時間銀行とは？</description></item><item><title>About</title><link>https://eniehack.netlify.com/about/</link><pubDate>Sat, 15 Sep 2018 23:10:06 +0900</pubDate><guid>https://eniehack.netlify.com/about/</guid><description> caffeineと申します。 現在は高専の電気系学科で勉強をしつつ、プログラミングも勉強しています。
+趣味/好きなもの 甘酒 焼きそばパン ノベルゲーム アニメ鑑賞 とらドラ！ 凪のあすから やはり俺の青春ラブコメまちがっている。 秒速5センチメートル CLANNAD Angel Beats! Charlotte 四畳半神話体系 氷菓 日常
+等々…の作品が好きです。 Twitter 読書
+社会科学から一般文芸、ラノベまでいろいろ読みます。 興味あること 色々なことに興味があり、色々な分野の勉強をしたい、と思っています。
+社会科学 社会学 経済学 P2P・分散ネットワーク IPFS I2P ActivityPub 等々 Linux OS Webプログラミング インフラ プログラミング経験 Python Django(Django REST Frameworkメイン) Flask(簡単なWebサイト、API制作) Bottle(簡単なWebサイト、API制作) Ruby Sinatra(簡単なWebサイト制作)</description></item></channel></rss>
