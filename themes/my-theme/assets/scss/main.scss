@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kosugi|M+PLUS+1p|Noto+Sans+JP|Noto+Serif+JP|Roboto|Sawarabi+Gothic|Sawarabi+Mincho');
+@import url('https://fonts.googleapis.com/css?family=Kosugi|M+PLUS+1p|Noto+Sans+JP|Noto+Serif+JP|Sawarabi+Gothic|Sawarabi+Mincho');
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
@@ -18,7 +18,7 @@ body {
     margin: 10px auto;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: stretch;
     flex-basis: 400px;
     flex-flow: wrap;
@@ -40,6 +40,7 @@ body {
 
 .avatar {
     grid-area: avatar;
+    margin: 10px;
     img {
         //border-radius: 20px;
         width: 250px;
@@ -47,37 +48,46 @@ body {
     }
 }
 
-.author {
-    grid-area: author;
-    text-align: start;
-    h1 {
-        font-size: 1.75em;
+.about{
+    margin: 10px;
+    margin-top: 20px;
+    .author {
+        grid-area: author;
+        text-align: start;
+        h1 {
+            font-size: 1.75em;
+            margin: 0;
+        }
     }
-}
+        
+    .description {
+        grid-area: description;
+        text-align: start;
+        h2 {
+            font-size: 20px;
+        font-weight: 200;
+        margin: 0;
+        }
+    }
     
-.description {
-    grid-area: description;
-    text-align: start;
-    h2 {
-    font-size: medium;
-    margin: 0;
-    }
-}
-
-.social {
-    grid-area: social;
-
-    ul {
-        padding: 0px;
-        margin: unset;
-        display: flex;
-        justify-content: left;
-
-        li {
-            margin: 5px;
-            list-style-type: none;
-            a {
-                color: #212121;
+    .social {
+        grid-area: social;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    
+        ul {
+            padding: 0px;
+            margin: unset;
+            display: flex;
+            justify-content: left;
+    
+            li {
+                margin: 5px;
+                list-style-type: none;
+                a {
+                    color: #212121;
+                }
             }
         }
     }
