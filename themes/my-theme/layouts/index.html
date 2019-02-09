@@ -1,4 +1,5 @@
 {{ define "main" -}}
+<div class="sidebar">
     <div class="avatar">
         <img src="{{ .Site.Params.avatarurl }}" alt="avatar">
     </div>
@@ -21,7 +22,11 @@
         </ul>
     </div>
     {{ end }}
+</div>
+<div class="intro-table">
+    <p>{{ .Site.Params.introduction }}</p>
     <div class="table">
         {{ partial "table.html" . }}
     </div>
+</div>
 {{- end }}

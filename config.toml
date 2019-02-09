@@ -5,41 +5,30 @@ theme = "my-theme"
 title = "caffeine"
 
 [params]
-	author = "caffeine"
+	author = "Nakaya(caffeine)"
 	info = "高専生"
-	description = "caffeine's portfolio page"
+	introduction = "(webエンジニア|クリエイター)志望高専生。読書も好きです。理系学生だけど(社会科学|人文科学)にも興味あり。Python(Django/Flask)/LuaLaTeX"
 	avatarurl = "images/avatar.png"
 	
-[[params.social]]
-	name = "GitHub"
-	weight = 1
-	icon = "fab fa-github fa-3x"
-	url = "https://github.com/eniehack"
-	
-[[params.social]]
-	name = "Mastodon"
-	weight = 2
-	icon = "fab fa-mastodon fa-3x"
-	url = "https://mstdn.maud.io/@eniehack"
+	[[params.social]]
+		name = "GitHub"
+		weight = 1
+		icon = "fab fa-github fa-3x"
+		url = "https://github.com/eniehack"
+		
+	[[params.social]]
+		name = "Mastodon"
+		weight = 2
+		icon = "fab fa-mastodon fa-3x"
+		url = "https://mstdn.maud.io/@eniehack"
 
-[[params.social]]
-	name = "Twitter"
-	weight = 3
-	icon = "fab fa-twitter fa-3x"
-	url = "https://twitter.com/eniehack"
-	
-[[menu.main]]
-	name = "Blog"
-	weight = 1
-	url = "https://eniehack.hatenablog.com/"
-	
-[[menu.main]]
-	name = "About"
-	weight = 2
-	url = "/about/"
-	
-[[menu.main]]
-	name = "Works"
-	weight = 3
-	url = "/works/"
-	
+	[[params.social]]
+		name = "Twitter"
+		weight = 3
+		icon = "fab fa-twitter fa-3x"
+		url = "https://twitter.com/eniehack"
+
+	[[params.jsonld]]
+		name = "caffeine"
+		url = "https://twitter.com/eniehack"
+		image = "https://eniehack.netlify.com/image/avatar.png"

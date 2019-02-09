@@ -1,42 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi|M+PLUS+1p|Noto+Sans+JP|Noto+Serif+JP|Roboto|Sawarabi+Gothic|Sawarabi+Mincho');
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 #content {
-    display: grid;
-    grid-template: 80px 60px 50px 1fr / 150px 150px;
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
-    grid-template-areas: 
-        "author avatar"
-        "description avatar"
-        "social social"
-        "table table";
+    //display: grid;
+    //grid-template: 250px 50px 35px 1fr / 250px;
+    //grid-row-gap: 10px;
+    //grid-column-gap: 30px;
+    /*grid-template-areas: 
+        "avatar"
+        "author"
+        "description"
+        "social"
+        "table"; */
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-basis: 400px;
+    flex-flow: wrap;
+}
+
+.introduction {
+    display: flex;
+    flex-flow: column wrap;
+    order: 1;
+    //flex-grow: 1;
+}
+
+.intro-table {
+    display: flex;
+    flex-flow: column wrap;
+    order: 2;
+    //flex-grow: 1.5;
 }
 
 .avatar {
     grid-area: avatar;
     img {
-        border-radius: 20px;
-        width: 150px;
-        height: 150px;
+        //border-radius: 20px;
+        width: 250px;
+        height: 250px;
     }
 }
 
 .author {
     grid-area: author;
-    text-align: end;
+    text-align: start;
+    h1 {
+        font-size: 1.75em;
+    }
 }
     
 .description {
     grid-area: description;
-    text-align: end;
+    text-align: start;
+    h2 {
+    font-size: medium;
+    margin: 0;
+    }
 }
 
 .social {
     grid-area: social;
 
     ul {
-        padding: 0px 20px;
+        padding: 0px;
         margin: unset;
         display: flex;
-        justify-content: center;
+        justify-content: left;
 
         li {
             margin: 5px;
@@ -50,4 +85,11 @@
 
 .table {
     grid-area: table;
+    th {
+        background: aliceblue;
+    }
+}
+
+li {
+    list-style-type: none;
 }
