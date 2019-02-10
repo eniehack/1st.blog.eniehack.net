@@ -2,7 +2,7 @@ baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
 defaultcontentlangage = "ja"
 theme = "my-theme"
-title = "caffeine"
+title = "Nakaya(caffeine)"
 
 [params]
 	author = "Nakaya(caffeine)"
