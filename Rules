@@ -1,13 +1,19 @@
 #!/usr/bin/env ruby
 
 compile '/index.html' do
-  layout '/default.*'
+  layout '/default.erb'
   write '/index.html'
 end
 
-compile '/**/*.html' do
-  layout '/default.*'
-  write item.identifier.without_ext + '/index.html'
+compile '/blog/*.html' do
+  filter :colorize_syntax, :default_colorizer => :rouge
+  layout '/default.erb', :erb
+end
+
+compile '/blog/*.adoc' do
+  filter :asciidoctor, safe: :unsafe
+  filter :colorize_syntax, :default_colorizer => :rouge
+  layout '/default.erb'
 end
 
 # This is an example rule that matches Markdown (.md) files, and filters them
@@ -22,6 +28,10 @@ end
 
 compile '/**/*' do
   write item.identifier.to_s
+end
+
+route %r[/blog/(\d{4})\-(\d{2})\-(\d{2})\-([^\/]+)\.?(adoc|xml|html)] do |y, m, d, slug|
+  "/blog/#{y}/#{m}/#{d}/#{slug}/index.html"
 end
 
 layout '/**/*', :erb

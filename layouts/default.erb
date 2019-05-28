@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>A Brand New Nanoc Site - <%= @item[:title] %></title>
+    <title><%= @item[:title] %> - タマゴアイコンは珈琲の夢を見るか？</title>
     <link rel="stylesheet" href="/stylesheet.css">
 
     <!-- you don't need to keep this, but it's cool for stats! -->
@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="main">
+      <h1><%= @item[:title] %></h1>
       <%= yield %>
     </div>
     <div id="sidebar">
