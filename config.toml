@@ -20,24 +20,35 @@ enableEmoji = true
 	dateformNumTime = "2006/01/02 15:04 -0700"
 	
 [[params.social]]
-	name = "github"
-	weight = 1
-	url = "https://github.com/eniehack/"
-	
+    name = "github"
+	class = "fa fa-github"
+    url = "https://github.com/eniehack/"
+
 [[params.social]]
-	name = "mastodon"
-	weight = 2
+    name = "Keybase"
+	class = "fa fa-keybase"
+	url = "https://keybase.io/eniehack/"
+
+[[params.social]]
+    name = "Misskey"
+	class = "fa fa-activitypub"
+	url = "https://misskey.io/@eniehack/"
+
+[[params.social]]
+    name = "mastodon"
+	class = "fa fa-mastodon"
 	url = "https://mstdn.maud.io/@eniehack/"
 
 [[params.social]]
-	name = "twitter"
-	weight = 3
+    name = "twitter"
+	class = "fa fa-twitter"
 	url = "https://twitter.com/eniehack/"
 	
 [[menu.main]]
 	name = "Blog"
 	weight = 1
-	url = "https://eniehack.hatenablog.com/"
+	#url = "https://eniehack.hatenablog.com/"
+    url = "/blog/"
 	
 [[menu.main]]
 	name = "About"
