@@ -46,16 +46,12 @@ enableEmoji = true
 	
 [[menu.main]]
 	name = "Blog"
-	weight = 1
-	#url = "https://eniehack.hatenablog.com/"
-  url = "/blog/"
+    url = "/blog/"
 	
 [[menu.main]]
 	name = "About"
-	weight = 2
 	url = "/about/"
 	
 [[menu.main]]
 	name = "Works"
-	weight = 3
 	url = "/works/"
