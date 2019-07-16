@@ -1,0 +1,35 @@
+{{ define "main" -}}
+    <div class="avatar">
+        <img src="{{ .Site.Params.avatarurl }}" alt="avatar">
+    </div>
+    <div class="about">
+        <div class="who">
+            <div class="author">
+                <h1>{{ .Site.Params.author }}</h1>
+            </div>
+            <div class="description">
+                <h2>{{ .Site.Params.info }}</h2>
+            </div>
+        </div>
+            {{ with .Site.Params.social }}
+            <div class="social">
+                <ul>
+                    {{ range sort . }}
+                        {{ if .icon }}
+                            <li><a rel="me" href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+                        {{ else }}
+                            <li><a rel="me" href="{{ .url }}">{{ .name }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+                {{ end }}
+    </div>
+</div>
+<div class="intro-table">
+    <p>{{ .Site.Params.introduction }}</p>
+    <div class="table">
+        {{ partial "table.html" . }}
+    </div>
+</div>
+{{- end }}
