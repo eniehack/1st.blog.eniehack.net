@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/eniehack
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://eniehack.netlify.com
+  * I am eniehack (https://keybase.io/eniehack) on keybase.
+  * I have a public key ASB25Y2Dnw1uJVVPmTBoA_CmmimVqL7MhgiEfYLEbQtS9Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012076e58d839f0d6e25554f99306803f0a69a2995a8becc8608847d82c46d0b52f50a",
+      "host": "keybase.io",
+      "kid": "012076e58d839f0d6e25554f99306803f0a69a2995a8becc8608847d82c46d0b52f50a",
+      "uid": "a8cf6501f8b4e9bd848e77c846b22219",
+      "username": "eniehack"
+    },
+    "merkle_root": {
+      "ctime": 1563301436,
+      "hash": "ebf1fc120e14700cacefaf8d81a2ec5dba45d3d132f8fd8a074de498652b551c26b25e7266c40dcb79f65c01d67fa42b0eb84dbecbcbd2bdd699277615fbea75",
+      "hash_meta": "8d53047bc2c824f9c1f23399c827c10cf3737c8eb409bf4e09e7eb5edb953885",
+      "seqno": 5776537
+    },
+    "service": {
+      "entropy": "jJAo5vsrelzX/22pyvvZStVF",
+      "hostname": "eniehack.netlify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.2.0"
+  },
+  "ctime": 1563301451,
+  "expire_in": 504576000,
+  "prev": "2ffd4ceed16436b4a7a876dd1db5467a7bb5bcf7a631593bc1be2a1f9914f777",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgduWNg58NbiVVT5kwaAPwppoplai+zIYIhH2CxG0LUvUKp3BheWxvYWTESpcCHsQgL/1M7tFkNrSnqHbdHbVGenu1vPemMVk7wb4qH5kU93fEIEjhOyJdLjSFjU8ONYMHeeVgX4OJ/P6/w6vcjQts7lpGAgHCo3NpZ8RAwvVh9tbWpPCtflVNU5cRHmuOpcPBaWD2Oa03UNNt5wCHKWJCuL23hIq+DiS6AiMV/8G9PiLpSSUt2yNphUH6A6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIA+UD2iRaddtO/KEN6YZWxy2IiDrOUoxmQJtKMSVkmJSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/eniehack
+
+==================================================================
