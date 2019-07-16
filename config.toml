@@ -1,6 +1,6 @@
 baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
-defaultcontentlangage = "en"
+defaultcontentlangage = "ja"
 theme = "hermit"
 title = "eniehack blog"
 hasCJKLanguage = true
@@ -48,7 +48,7 @@ enableEmoji = true
 	name = "Blog"
 	weight = 1
 	#url = "https://eniehack.hatenablog.com/"
-    url = "/blog/"
+  url = "/blog/"
 	
 [[menu.main]]
 	name = "About"
@@ -59,4 +59,3 @@ enableEmoji = true
 	name = "Works"
 	weight = 3
 	url = "/works/"
-	
