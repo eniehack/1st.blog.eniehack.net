@@ -1,34 +1,57 @@
 baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
 defaultcontentlangage = "ja"
-theme = "my-theme"
-title = "Nakaya(caffeine)"
+theme = "hermit"
+title = "eniehack blog"
+hasCJKLanguage = true
+enableEmoji = true 
 
-[params]
-	author = "Nakaya(caffeine)"
-	info = "高専生"
-	introduction = "(webエンジニア|クリエイター)志望高専生。読書も好きです。理系学生だけど(社会科学|人文科学)にも興味あり。Python(Django/Flask)/LuaLaTeX"
+[author]
+	name = "Nakaya"
 	avatarurl = "images/avatar.png"
+
+[taxonomies]
+    tag = "tags"
 	
-	[[params.social]]
-		name = "GitHub"
-		weight = 1
-		icon = "fab fa-github fa-3x"
-		url = "https://github.com/eniehack"
-		
-	[[params.social]]
-		name = "Mastodon"
-		weight = 2
-		icon = "fab fa-mastodon fa-3x"
-		url = "https://mstdn.maud.io/@eniehack"
+[params]
+	dateform = "January 02, 2006"
+	dateformShort = "January 02, 2006"
+	dateformNum = "2006/01/02"
+	dateformNumTime = "2006/01/02 15:04 -0700"
+	
+[[params.social]]
+    name = "github"
+	class = "fa fa-github"
+    url = "https://github.com/eniehack/"
 
-	[[params.social]]
-		name = "Twitter"
-		weight = 3
-		icon = "fab fa-twitter fa-3x"
-		url = "https://twitter.com/eniehack"
+[[params.social]]
+    name = "Keybase"
+	class = "fa fa-keybase"
+	url = "https://keybase.io/eniehack/"
 
-	[[params.jsonld]]
-		name = "caffeine"
-		url = "https://twitter.com/eniehack"
-		image = "https://eniehack.netlify.com/image/avatar.png"
+[[params.social]]
+    name = "Misskey"
+	class = "fa fa-activitypub"
+	url = "https://misskey.io/@eniehack/"
+
+[[params.social]]
+    name = "mastodon"
+	class = "fa fa-mastodon"
+	url = "https://mstdn.maud.io/@eniehack/"
+
+[[params.social]]
+    name = "twitter"
+	class = "fa fa-twitter"
+	url = "https://twitter.com/eniehack/"
+	
+[[menu.main]]
+	name = "Blog"
+    url = "/blog/"
+	
+[[menu.main]]
+	name = "About"
+	url = "/about/"
+	
+[[menu.main]]
+	name = "Works"
+	url = "/works/"
