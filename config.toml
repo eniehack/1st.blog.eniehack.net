@@ -1,37 +1,37 @@
 baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
 defaultcontentlangage = "en"
-theme = "coder"
-title = "caffeine"
+theme = "hermit"
+title = "eniehack blog"
+hasCJKLanguage = true
+enableEmoji = true 
 
-[params]
-	author = "caffeine"
-	info = "Beginner of Web programming."
-	description = "caffeine's portfolio page"
-	
+[author]
+	name = "Nakaya"
 	avatarurl = "images/avatar.png"
-	
-	dateformat = "September 15, 2018"
 
-    hideCredits = false
-hideCopyright = false
+[taxonomies]
+    tag = "tags"
+	
+[params]
+	dateform = "January 02, 2006"
+	dateformShort = "January 02, 2006"
+	dateformNum = "2006/01/02"
+	dateformNumTime = "2006/01/02 15:04 -0700"
 	
 [[params.social]]
-	name = "GitHub"
+	name = "github"
 	weight = 1
-	icon = "fab fa-github fa-3x"
 	url = "https://github.com/eniehack/"
 	
 [[params.social]]
-	name = "Mastodon"
+	name = "mastodon"
 	weight = 2
-	icon = "fab fa-mastodon fa-3x"
 	url = "https://mstdn.maud.io/@eniehack/"
 
 [[params.social]]
-	name = "Twitter"
+	name = "twitter"
 	weight = 3
-	icon = "fab fa-twitter fa-3x"
 	url = "https://twitter.com/eniehack/"
 	
 [[menu.main]]
