@@ -2,13 +2,14 @@ baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
 defaultcontentlangage = "ja"
 theme = "hermit"
-title = "eniehack blog"
+title = "Nakaya's blog"
 hasCJKLanguage = true
 enableEmoji = true 
+enableGitInfo = true
+description = "Nakaya's blog"
 
 [author]
 	name = "Nakaya"
-	avatarurl = "images/avatar.png"
 
 [taxonomies]
     tag = "tags"
@@ -18,6 +19,9 @@ enableEmoji = true
 	dateformShort = "January 02, 2006"
 	dateformNum = "2006/01/02"
 	dateformNumTime = "2006/01/02 15:04 -0700"
+    locale = "ja_JP"
+	ogp_image = "avatar.png"
+    twitter = "eniehack"
 	
 [[params.social]]
     name = "github"

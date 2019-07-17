@@ -6,5 +6,8 @@ draft: true
 aliases:
 categories:
 tags: []
+locale: ja_JP
+description:
+twitter: "eniehack"
 ---
 
