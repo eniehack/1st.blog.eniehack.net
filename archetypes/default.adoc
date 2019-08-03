@@ -1,13 +1,13 @@
 
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
-aliases:
-categories:
-tags: []
-locale: ja_JP
-description:
-twitter: "eniehack"
----
++++
+title = "{{ replace .Name "-" " " | title }}"
+date = {{ .Date }}
+draft = true
+aliases = ""
+categories = ""
+tags = []
+locale = "ja_JP"
+description = ""
+twitter = "eniehack"
++++
 
