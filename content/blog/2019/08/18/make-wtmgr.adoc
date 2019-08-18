@@ -2,7 +2,7 @@
 +++
 title = "W32TeX向けアーカイブマネージャを作った"
 date = 2019-08-18T00:28:22+09:00
-draft = true
+draft = false
 aliases = ""
 categories = "technology"
 tags = ["tex", "python", "progress", "software"]
