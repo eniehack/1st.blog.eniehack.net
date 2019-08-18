@@ -15,10 +15,11 @@ twitter = "eniehack"
 
 こんにちは。最近部誌でTeXを使っているのでTeXにお熱のNakayaです。ブログ更新が2週間空きましたが元気に生活しています。
 
+WindowsでTeXLiveを使うと毎年更新しないといけないみたいだし、tlmgrが重いしで、私はW32TeXを使っています。しかし、パッケージの管理が大変なので先日link:https://github.com/eniehack/W32TeX-Package-Manager[W32TeX向けのアーカイブマネージャ]を開発しました。その経緯と思想、内部構造、今後などを語っていきたいと思います。
+
 == 経緯
 
-WindowsでTeXLiveを使うと毎年更新しないといけないみたいだし、tlmgrが重いしで、私はW32TeXを使っています。 +
-ところで、先日ConTeXtを試してみるかと思い立ってConTeXtのアーカイブをダウンロードし、 
+先日ConTeXtを試してみるかと思い立ってConTeXtのアーカイブをダウンロードし、 
 `texinstwin` からの `installmk4` と、link:https://texwiki.texjp.org/?ConTeXt[TeXjpWiki]通りにコマンドを実行してみると、どうもLuaLaTeXのバージョンが古いみたいでインストールに失敗しました。 +
 その後W32TeX版LuaLaTeXの最新版を落として無事にConTeXtはインストールできたのですが、
 W32TeX公式のCLIインストーラ版にはパッケージマネージャが付属していないのでこうなったのかなあ、と思ったわけです。
