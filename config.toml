@@ -2,17 +2,18 @@ baseURL = "https://eniehack.netlify.com"
 languageCode = "ja"
 defaultcontentlangage = "ja"
 theme = "hermit"
-title = "Nakaya's blog"
+title = "Nakaya's Blog"
 hasCJKLanguage = true
 enableEmoji = true 
 enableGitInfo = true
-description = "Nakaya's blog"
+description = "タマゴアイコンは珈琲豆乳の夢を見るか？"
 
 [author]
 	name = "Nakaya"
 
 [taxonomies]
     tag = "tags"
+	category = "categories"
 	
 [params]
 	dateform = "January 02, 2006"
