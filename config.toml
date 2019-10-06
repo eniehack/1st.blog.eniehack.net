@@ -1,4 +1,4 @@
-baseURL = "https://eniehack.netlify.com"
+baseURL = "https://blog.eniehack.net"
 languageCode = "ja"
 defaultcontentlangage = "ja"
 theme = "hermit"
