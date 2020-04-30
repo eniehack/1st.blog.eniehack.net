@@ -8,6 +8,8 @@ html lang="ja"
     meta rel="canonical" href="#{config[:base_url]}#{item.path}"
     meta rel="icon" href="#{relative_path_to config[:icon]}" type="image/png"
     meta rel="alternate" href="#{relative_path_to '/atom.xml'}" type="application/atom+xml"
+    script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js" defer=""
+    script src="#{relative_path_to '/assets/internet-explorer.js'}" defer=""
     include layouts/partial/_opengraph.html
   body
     header
