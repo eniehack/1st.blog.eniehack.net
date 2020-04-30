@@ -1,0 +1,14 @@
+- render "/base.html.*", title: item[:title], published_at: item[:created_at]
+  article
+    / title
+    h1
+      = item[:title]
+    / Tag
+    div
+      #tag
+        == tags_for(item, base_url: "/tags/")
+      #breadcrumbs
+        - breadcrumbs_trail.map do |element|
+          = element
+    /toc
+    == yield

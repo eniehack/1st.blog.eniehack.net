@@ -1,0 +1,76 @@
+#!/usr/bin/env ruby
+
+preprocess do
+  create_tag_pages
+end
+
+compile "/tags/**/" do
+  layout '/tags.*'
+  write item.identifier.to_s
+end
+
+compile "/tags/**" do
+  layout '/tags.*'
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/index.html.*' do
+  filter :slim
+  write '/index.html'
+end
+
+compile '/**/*.html' do
+  layout '/base.html.slim'
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+# This is an example rule that matches Markdown (.md) files, and filters them
+# using the :kramdown filter. It is commented out by default, because kramdown
+# is not bundled with Nanoc or Ruby.
+#
+compile '/articles/**/*.adoc' do
+  filter :asciidoctor, backend: :xhtml5, template_dir: "layouts/asciidoctor", attrites: {"toc" => "auto"}
+  filter :colorize_syntax, default_colorizer: :rouge
+  layout '/article.html.slim'
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/assets/**' do
+  write item.identifier.to_s
+end
+
+passthrough "/assets/favicon-32x32.png"
+
+compile '/atom.xml.*' do
+  filter :slim
+  write "/atom.xml"
+end
+
+
+route %r[^/content/articles/(\d{4})/(\d{2})/(\d{2})/(\w+).adoc$] do |year, month, day, slug|
+  "/#{year}/#{month}/#{day}/#{slug}/index.html"
+end
+
+route %r[^/content/articles/(\d{4})/(\d{2})/(\d{2})/(\w+)$] do |year, month, day, slug|
+  "/#{year}/#{month}/#{day}/#{slug}"
+end
+
+route '/**/*' do
+  @item.identifier.to_s
+end
+
+layout '/**/*', :slim

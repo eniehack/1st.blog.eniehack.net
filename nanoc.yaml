@@ -1,0 +1,23 @@
+# A list of file extensions that Nanoc will consider to be textual rather than
+# binary. If an item with an extension not in this list is found,  the file
+# will be considered as binary.
+text_extensions: [ 'adoc', 'asciidoc', 'atom', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'ms', 'mustache', 'php', 'rb', 'rdoc', 'sass', 'scss', 'slim', 'tex', 'txt', 'xhtml', 'xml' ]
+
+prune:
+  auto_prune: true
+  exclude:
+    - ".git"
+    - ".gitignore"
+
+data_sources:
+  - type: filesystem
+    encoding: utf-8
+
+base_url: "https://blog.eniehack.net"
+author: "Nakaya"
+site_name: "タマゴアイコンは珈琲の夢を見るか？"
+ogp_locale: "ja_JP"
+twitter_id: "@eniehack"
+image: "/assets/android-chrome-192x192.png"
+icon: "/assets/favicon-32x32.png"
+ogp_image: "/assets/android-chrome-192x192.png"
