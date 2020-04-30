@@ -1,0 +1,10 @@
+- elements.each do |article|
+  - section_id = article.path.sub(%r!/articles/(\d{4})/(\d{2})/(\d{2})/((\w|\-)+)/!) do "#{$1}-#{$2}-#{$3}-#{$4}" end
+  section id="#{section_id}"
+    h1 id="#{section_id}"
+      == link_to(article[:title], article.path)
+    div
+      time[datetime="#{article[:created_at]}"]
+        = "created_at: #{article[:created_at].strftime("%g/%m/%d %T %z")}"
+      div
+        == "tag: #{tags_for(article, {:base_url => '/tags/', :separator => ', '})}"

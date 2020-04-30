@@ -1,0 +1,7 @@
+- render "/base.html.*", item: item, published_at: Time.now()
+  h1
+    = item[:title]
+  - if taged_items = items_with_tag(item[:tag])
+    == render "/list.html.*", elements: taged_items.sort_by{|e| e[:created_at]}.reverse
+  - else
+    p Not Found

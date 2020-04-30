@@ -1,0 +1,14 @@
+- if level == 0
+  h1[id="#{id}", class="title"]
+  - if id
+    a.permalink[href="##{id}"]
+    = title
+  = content
+- else
+  section[id="#{id}"]
+    .container
+     *{tag: "h#{level + 1}", class: "title"}
+       - if id
+         a.permalink[href="##{id}" role="presentation"]
+       = title
+     = content

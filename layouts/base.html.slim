@@ -1,0 +1,18 @@
+doctype html
+html lang="ja"
+  head prefix="og: http://ogp.me/ns#"
+    title
+      = "#{item[:title]} - #{config[:site_name]}"
+    meta charset="utf-8"
+    meta name="generator" content="nanoc #{Nanoc::VERSION}"
+    meta rel="canonical" href="#{config[:base_url]}#{item.path}"
+    meta rel="icon" href="#{relative_path_to config[:icon]}" type="image/png"
+    meta rel="alternate" href="#{relative_path_to '/atom.xml'}" type="application/atom+xml"
+    include layouts/partial/_opengraph.html
+  body
+    header
+      include layouts/partial/_header.html
+    main
+      == yield
+    footer
+      include layouts/partial/_footer.html
