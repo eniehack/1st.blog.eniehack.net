@@ -1,10 +1,17 @@
 - elements.each do |article|
   - section_id = article.path.sub(%r!/articles/(\d{4})/(\d{2})/(\d{2})/((\w|\-)+)/!) do "#{$1}-#{$2}-#{$3}-#{$4}" end
-  section id="#{section_id}"
-    h1 id="#{section_id}"
+  section.article-list__element.article-list-element id="#{section_id}"
+    h1.article-list-element__title id="#{section_id}"
       == link_to(article[:title], article.path)
-    div
-      time[datetime="#{article[:created_at]}"]
-        = "created_at: #{article[:created_at].strftime("%g/%m/%d %T %z")}"
-      div
-        == "tag: #{tags_for(article, {:base_url => '/tags/', :separator => ', '})}"
+    div.article-list-element__metadata
+      div.article-metadata
+        span.article-metadata__icon
+          i.fa.fa-calendar aria-hidden="true"
+        span.article-metadata__content
+          time[datetime="#{article[:created_at]}"]
+            = article[:created_at].strftime("%G/%m/%d %T %z")
+      div.article-metadata
+        span.article-metadata__icon
+          i.fa.fa-tags aria-hidden="true"
+        span.article-metadata__content
+          == tags_for(article, {:base_url => '/tags/', :separator => ', '})
