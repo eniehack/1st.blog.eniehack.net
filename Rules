@@ -53,7 +53,16 @@ compile '/assets/**' do
   write item.identifier.to_s
 end
 
-passthrough "/assets/favicon-32x32.png"
+compile '/assets/css/*.css' do
+  write item.identifier.to_s
+end
+
+compile '/assets/css/*.scss' do
+  filter :sass, style: :compact
+  write item.identifier.without_ext + '.css'
+end
+
+passthrough "/assets/favicon.ico"
 
 compile '/atom.xml.*' do
   filter :slim

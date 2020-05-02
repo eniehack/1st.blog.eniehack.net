@@ -4,11 +4,14 @@
     h1
       = item[:title]
     / Tag
-    div
-      #tag
+    .article-metadata
+      .article-metadata__icon
+        i.fa.fa-tags aria-hidden="true"
+      .article-metadata__content
         == tags_for(item, base_url: "/tags/")
       #breadcrumbs
         - breadcrumbs_trail.map do |element|
           = element
     /toc
+    hr
     == yield
