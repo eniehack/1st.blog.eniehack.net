@@ -58,7 +58,7 @@ compile '/assets/css/*.css' do
 end
 
 compile '/assets/css/*.scss' do
-  filter :sass, style: :compact
+  filter :sass, syntax: :scss, style: :compact
   write item.identifier.without_ext + '.css'
 end
 

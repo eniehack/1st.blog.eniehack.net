@@ -87,6 +87,11 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ref (2.0.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -111,6 +116,7 @@ DEPENDENCIES
   nanoc (~> 4.11, >= 4.11.15)
   nanoc-live (~> 1.0.0b6)
   nokogiri (~> 1.10, >= 1.10.9)
+  sass (~> 3.7, >= 3.7.4)
   slim (~> 4.0, >= 4.0.1)
 
 BUNDLED WITH
