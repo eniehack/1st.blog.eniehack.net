@@ -49,7 +49,11 @@ compile '/articles/**/*.adoc' do
   end
 end
 
-compile '/assets/**' do
+compile '/assets/js/*.js' do
+  write item.identifier.to_s
+end
+
+compile '/assets/images/*.*' do
   write item.identifier.to_s
 end
 
