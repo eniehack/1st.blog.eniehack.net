@@ -1,6 +1,7 @@
 ---
 title: Home
 created_at: "2020-04-29 20:00:00+09:00"
+priority: 1.0
 ---
 - render "/base.html.slim", published_at: Time.now()
   == render "/list.html.slim", elements: sorted_articles[0, 10]
