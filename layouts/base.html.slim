@@ -20,13 +20,13 @@ html lang="ja"
     link rel="stylesheet" href="#{relative_path_to '/assets/css/style.css'}"
     script src="https://cdn.jsdelivr.net/npm/ie-buster@1.1.0/dist/ie-buster.min.js" defer=""
     script src="#{relative_path_to '/assets/js/internet-explorer.js'}" defer=""
-    include layouts/partial/_opengraph.html
-    include layouts/partial/_schemaorg.html
+    == render "/partial/_opengraph.html.*"
+    == render "/partial/_schemaorg.html.*"
   body
     div.container
       header
-        include layouts/partial/_header.html
+        == render "/partial/_header.html.*"
       main
         == yield
       footer
-        include layouts/partial/_footer.html
+        == render "/partial/_footer.html.*"
