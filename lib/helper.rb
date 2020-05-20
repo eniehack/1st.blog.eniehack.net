@@ -4,6 +4,7 @@ include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::Breadcrumbs
 include Nanoc::Helpers::Tagging
+include Nanoc::Helpers::XMLSitemap
 
 def tag_set(items = nil)
   require "set"

@@ -73,6 +73,11 @@ compile '/atom.xml.*' do
   write "/atom.xml"
 end
 
+compile '/sitemap.xml.*' do
+  filter :slim
+  write "/sitemap.xml"
+end
+
 
 route %r[^/content/articles/(\d{4})/(\d{2})/(\d{2})/(\w+).adoc$] do |year, month, day, slug|
   "/#{year}/#{month}/#{day}/#{slug}/index.html"
