@@ -1,0 +1,38 @@
+script type="application/json+ld"
+  |
+    {
+      "@context": "https://schema.org/",
+      "@graph": [
+        {
+          "@id": "https://blog.eniehack.net/#website",
+          "@type": "WebSite",
+          "url": "https://blog.eniehack.net",
+          "name": "タマゴアイコンは珈琲の夢を見るか？",
+          "keywords": "eniehack,Nakaya,blog",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "isPartOf": {
+            "@id": "https://eniehack.net/#website"
+          },
+          "publisher": {
+            "@id": "https://blog.eniehack.net/#person"
+          },
+          "sameAs": [
+            "https://twitter.com/eniehack",
+            "https://pleroma.eniehack.net/eniehack",
+            "https://qiita.com/eniehack",
+            "https://eniehack.hatenablog.com"
+          ]
+        },
+        {
+          "@id": "https://blog.eniehack.net/#person",
+          "@type": "Person",
+          "knowLanguage": "ja,en",
+          "publishingPrinciples": [
+            "https://blog.eniehack.net",
+            "https://eniehack.net"
+          ],
+          "sameAs": "https://eniehack.net/#person"
+        }
+      ]
+    }
+
