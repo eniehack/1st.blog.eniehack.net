@@ -10,7 +10,7 @@ tags:
   - "web_development"
   - "progress"
 locale: "ja_JP"
-description: ""
+description: "Blogを改装した話とちょっと近況を。"
 twitter: ""
 ---
 
