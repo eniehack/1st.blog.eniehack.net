@@ -18,6 +18,29 @@ footer {
   margin-bottom: 20px;
 }
 
+.breadcrumbs {
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin: 0 10px 0 0;
+      font-size: 13px;
+      float: left;
+
+      &::before {
+        content: "/";
+        margin-right: 10px;
+      }
+
+      &:first-child::before {
+        content: "";
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
 .article-list-element__title {
   margin-bottom: 5px;
 }
@@ -65,9 +88,9 @@ footer {
 }
 
 @media screen and (min-width: 120rem) {
-.nav {
-  .nav__hamburger {
-    display: none;
+  .nav {
+    .nav__hamburger {
+      display: none;
+    }
   }
-}
 }
