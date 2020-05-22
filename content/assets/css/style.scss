@@ -86,6 +86,25 @@ footer {
   }
 }
 
+.toc {
+  #toctitle {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 2.5rem;
+    list-style-type: decimal;
+  }
+
+  .sectlevel1 {
+    margin-left: 10px;
+  }
+
+  .sectlevel2 {
+    margin: 1.0rem 0 1.0rem 1.5rem;
+  }
+}
+
 @media screen and (width < 120rem) {
   .nav {
     .nav__hamburger {
@@ -109,3 +128,4 @@ footer {
     }
   }
 }
+
