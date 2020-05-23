@@ -1,25 +1,32 @@
 - render "/base.html.*", title: item[:title], published_at: item[:created_at]
-  article
+  article itemscope="" itemtype="http://schema.org/BlogPosting" itemref="copyright"
     / title
-    .metadata
-      .breadcrumbs
-        ul itemscope="" itemtype="https://schema.org/BreadcrumbList"
-          - index = 1
-          - breadcrumbs_trail.each do |element|
-            - next if element.nil?
-            li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/listItem"
-              a itemprop="item" href="#{element.path}"
-                span itemprop="name" = element[:title]
-              meta itemprop="position" content="#{index}"
-            - index += 1
-      h1
+    header
+      aside
+        .breadcrumbs
+          ul itemscope="" itemtype="https://schema.org/BreadcrumbList"
+            - index = 1
+            - breadcrumbs_trail.each do |element|
+              - next if element.nil?
+              li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/listItem"
+                a itemprop="item" href="#{element.path}"
+                  span itemprop="name" = element[:title]
+                meta itemprop="position" content="#{index}"
+              - index += 1
+      h1 itemprop="name"
         = item[:title]
-      / Tag
-      .article-metadata
-        .article-metadata__icon
-          i.fa.fa-tags aria-hidden="true"
-        .article-metadata__content
-          == tags_for(item, base_url: "/tags/")
-    /toc
-    hr
-    == yield
+      aside
+        .article-metadata
+          .article-metadata__icon
+            i.fa.fa-tags aria-hidden="true"
+          .article-metadata__content
+            span itemprop="keywords"
+              == tags_for(item, base_url: "/tags/")
+        .article-metadata
+          .article-metadata__icon
+            i.fa.fa-clock-o aria-hidden="true"
+          .article-metadata__content
+            time pubdate="" datetime="#{item[:created_at]}" itemprop="datePublished"
+              = item[:created_at]
+    main itemprop="articleBody"
+      == yield
