@@ -34,7 +34,7 @@ end
 # is not bundled with Nanoc or Ruby.
 #
 compile '/articles/**/*.adoc' do
-  filter :asciidoctor, backend: :xhtml5, template_dir: "layouts/asciidoctor", attrites: {"toc" => "auto"}
+  filter :asciidoctor, backend: :xhtml5, template_dir: "layouts/asciidoctor", attributes: {"toc" => "auto"}
   filter :colorize_syntax, default_colorizer: :rouge
   layout '/article.html.slim'
 
