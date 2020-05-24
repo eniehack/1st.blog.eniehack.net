@@ -1,15 +1,19 @@
-ul
-  li
-    span
+  ul#footer-link
+    li
       a href="#{relative_path_to '/atom.xml'}" aria-label="This site's Atom Feed"
-        i.fa.fa-rss.fa-2x aria-hidden="true"
-  li#copyright
+        i.fa.fa-rss.footer-link__icon aria-hidden="true"
+        span.footer-link__name feed
+    li
+      a href="https://github.com/eniehack/blog.eniehack.net"
+        i.fa.fa-github.footer-link__icon aria-hidden="true"
+        span.footer-link__name repository
+  #copyright
     small
       span Copyright &copy; 2020 
       span itemprop="author publisher" itemtype="http://schema.org/Person" itemscope=""
         a href="https://eniehack.net" rel="author" itemprop="url"
           span itemprop="name" eniehack
-  li
+  #license
     small Assets and articles not otherwise specified are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Source code is licensed under by <a href="https://www.mozilla.org/en-US/MPL/2.0/" rel="license">MPL-2.0</a>.
-  li
+  #software
     small This site is made by <a href="https://nanoc.ws/">Nanoc</a>, <a href="https://asciidoctor.org/">Asciidoctor</a>.
