@@ -1,3 +1,5 @@
+require "./lib/git.rb"
+
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::HTMLEscape
 include Nanoc::Helpers::LinkTo
@@ -5,6 +7,7 @@ include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::Breadcrumbs
 include Nanoc::Helpers::Tagging
 include Nanoc::Helpers::XMLSitemap
+include BlogEniehackNet::Helpers::Git
 
 def tag_set(items = nil)
   require "set"
@@ -30,5 +33,18 @@ def create_tag_pages
       "/tags/#{tag}",
     )
     p "create_tag_pages/tag: #{tag}, #{tag.inspect}"
+  end
+end
+
+def set_articles_date
+  @items.each do |item|
+    next unless item[:kind] == "article"
+    dates_hash = find_file_updated ".", "content#{item.identifier.to_s}"
+
+    item[:updated_at] = dates_hash[:updated_at]
+
+    dur = item[:created_at] <=> dates_hash[:created_at]
+    next if dur == -1
+    item[:created_at] = dates_hash[:created_at]
   end
 end

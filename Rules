@@ -2,6 +2,7 @@
 
 preprocess do
   create_tag_pages
+  set_articles_date
 end
 
 compile "/tags/**/" do

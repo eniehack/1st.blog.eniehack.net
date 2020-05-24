@@ -83,10 +83,12 @@ GEM
     rack (2.2.2)
     rack-livereload (0.3.17)
       rack
+    rake (13.0.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ref (2.0.0)
+    rugged (1.0.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -116,6 +118,8 @@ DEPENDENCIES
   nanoc (~> 4.11, >= 4.11.15)
   nanoc-live (~> 1.0.0b6)
   nokogiri (~> 1.10, >= 1.10.9)
+  rake (~> 13.0, >= 13.0.1)
+  rugged (~> 1.0)
   sass (~> 3.7, >= 3.7.4)
   slim (~> 4.0, >= 4.0.1)
 
