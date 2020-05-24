@@ -71,12 +71,12 @@ compile '/index.html.*' do
 end
 
 compile '/atom.xml.*' do
-  filter :slim
+  filter :erb
   write "/atom.xml"
 end
 
 compile '/sitemap.xml.*' do
-  filter :slim
+  filter :erb
   write "/sitemap.xml"
 end
 
@@ -97,4 +97,5 @@ route '/**/*' do
   @item.identifier.to_s
 end
 
-layout '/**/*', :slim
+layout '/**/*.slim', :slim
+layout '/**/*.erb', :erb
