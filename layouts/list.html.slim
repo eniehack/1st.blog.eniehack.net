@@ -6,10 +6,16 @@
     div.article-list-element__metadata
       div.article-metadata
         span.article-metadata__icon
-          i.fa.fa-calendar aria-hidden="true"
+          i.fa.fa-clock-o aria-hidden="true"
         span.article-metadata__content
           time[datetime="#{article[:created_at]}"]
             = article[:created_at].strftime("%G/%m/%d %T %z")
+      div.article-metadata
+        span.article-metadata__icon
+          i.fa.fa-refresh aria-hidden="true"
+        span.article-metadata__content
+          time[datetime="#{article[:created_at]}"]
+            = article[:updated_at].strftime("%G/%m/%d %T %z")
       div.article-metadata
         span.article-metadata__icon
           i.fa.fa-tags aria-hidden="true"
