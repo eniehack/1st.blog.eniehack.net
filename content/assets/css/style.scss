@@ -105,6 +105,15 @@ footer {
   }
 }
 
+footer {
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (width < 120rem) {
   .nav {
     .nav__hamburger {
