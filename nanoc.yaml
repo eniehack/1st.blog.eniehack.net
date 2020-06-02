@@ -15,7 +15,7 @@ data_sources:
 
 base_url: "https://blog.eniehack.net"
 author: "Nakaya"
-site_name: "タマゴアイコンは珈琲の夢を見るか？"
+site_name: "タマゴアイコンはインスタント珈琲の夢を見るか？"
 ogp_locale: "ja_JP"
 twitter_id: "@eniehack"
 image: "/assets/images/android-chrome-192x192.png"
