@@ -37,6 +37,7 @@ def set_articles_date
   @items.each do |item|
     next unless item[:kind] == "article"
     dates_hash = find_file_updated ".", "content#{item.identifier.to_s}"
+    next if dates_hash[:created_at].nil?
 
     item[:updated_at] = dates_hash[:updated_at]
 

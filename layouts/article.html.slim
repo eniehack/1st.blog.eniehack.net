@@ -28,11 +28,12 @@
           .article-metadata__content
             time pubdate="" datetime="#{item[:created_at]}" itemprop="datepublished"
               = item[:created_at]
-        .article-metadata
-          .article-metadata__icon
-            i.fa.fa-refresh aria-hidden="true"
-          .article-metadata__content
-            time pubdate="" datetime="#{item[:updated_at]}" itemprop="dateModified"
-              = item[:updated_at]
+        - unless item[:updated_at].nil?
+          .article-metadata
+            .article-metadata__icon
+              i.fa.fa-refresh aria-hidden="true"
+            .article-metadata__content
+              time pubdate="" datetime="#{item[:updated_at]}" itemprop="dateModified"
+                = item[:updated_at]
     main itemprop="articleBody"
       == yield

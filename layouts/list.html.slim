@@ -10,12 +10,13 @@
         span.article-metadata__content
           time[datetime="#{article[:created_at]}"]
             = article[:created_at].strftime("%G/%m/%d %T %z")
-      div.article-metadata
-        span.article-metadata__icon
-          i.fa.fa-refresh aria-hidden="true"
-        span.article-metadata__content
-          time[datetime="#{article[:created_at]}"]
-            = article[:updated_at].strftime("%G/%m/%d %T %z")
+      - unless article[:updated_at].nil?
+        div.article-metadata
+          span.article-metadata__icon
+            i.fa.fa-refresh aria-hidden="true"
+          span.article-metadata__content
+            time[datetime="#{article[:updated_at]}"]
+              = article[:updated_at].strftime("%G/%m/%d %T %z")
       div.article-metadata
         span.article-metadata__icon
           i.fa.fa-tags aria-hidden="true"
